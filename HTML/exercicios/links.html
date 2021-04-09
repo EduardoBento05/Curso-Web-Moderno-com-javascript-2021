@@ -1,0 +1,25 @@
+<h1>Links</h1>
+
+<!--URL Absoluta-->
+<a id="inicio" href="http://google.com.br">Google 1</a><br><!--Sai da pagina redirecionado para o site-->
+<a href="http://google.com.br" target="_blank">Google 2</a><br><br><!--Sai da pagina atraves de uma nova aba-->
+
+<!--OBS: com as urls absolutas não pode retirar o http-->
+
+<!--URL Relativa-->
+<a href="index.html">Voltar 1</a><br> <!--Só funciona qunado é acessado pelo index-->
+<a href="/index.html">Voltar 2</a><br><!--Vai acessar o arquivo independente da onde estiver-->
+<a href="../index.html">Voltar 3</a><br><br><!-- cada ../ é  quantidade de pastas que ele ira passar para chegar a um determinado arquivo-->
+
+<a href="mailto:email@empresa.com.br">Entre em Contato</a><br><br>
+
+<!--div#noticia - cria uma div com o nome da id desejado-->
+<!--span.teste - cria um span com a class de nome desejado-->
+
+<div id="noticia" style="position:absolute;top: 2000px;">
+    <h1>Notícia Bomba!</h1>
+    <p>Não era Nada...:)</p>
+    <a href="#inicio">Voltar Inicio</a><!--Efeito ancora , um link que redericiona para o id desejado-->
+</div>
+
+<a href="#noticia">Ir para a Notícia</a><!--Efeito ancora , um link que redericiona para o id desejado-->
