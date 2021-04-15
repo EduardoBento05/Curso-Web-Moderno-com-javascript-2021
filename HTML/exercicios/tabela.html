@@ -1,0 +1,53 @@
+<table> <!--Tag que Define uma Tabela-->
+    <caption>Produtos</caption>
+    <thead><!--Cabeçalho da Tabela-->
+        <tr>
+            <th>Produto</th><!--Th são as colunas da tabela-->
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead><!--Tr São as linhas da tabela-->
+    <tbody><!--Corpo da tabela onde vão ser organizados os dados-->
+        <tr><!--Aqui serão armazedanos varios td = table datas, dados em forma de linha-->
+            <td>Ipad</td>
+            <td>3289,00</td>
+            <td>5</td>
+            <td>16445,00</td>
+        </tr>
+        <tr>
+            <td>Samsung S9</td>
+            <td>2649,00</td>
+            <td>8</td>
+            <td>211192,00</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total</td><!--Colspan comando que funciona para ocupar diversas colunas ao mesmo tempo-->
+            <td>37637,00</td>         <!--rowspan comando que funciona para ocupar diversas linhas ao mesmo tempo--->
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table{
+        border-collapse: collapse;
+    }
+    th , td{
+        padding: 10px;
+    }
+    thead tr{
+        border-bottom: solid 3px #444;
+    }
+    tbody tr:hover { 
+        background-color: #dedede;
+    }
+    tfoot{
+        background-color: #444;
+        color: #fff;
+        font-weight: bold;
+    }
+</style>
+
+<!--Hover =  Comando que quando passa o mouse em cima de alguma coisa fica da cor desejada-->
