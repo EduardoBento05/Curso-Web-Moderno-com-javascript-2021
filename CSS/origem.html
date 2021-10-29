@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Origem CSS: Externo, Interno e Inline</title>
+    <style>
+       body{
+           background-color: orchid;
+       }
+    </style>
+    <link rel="stylesheet" href="css/externo.css">
+</head>
+<!--A ordem de preferencia do css é sempre o ultimo comanto a ser executado
+como nestes caso a cor que aparecera no fundo da pagina será do link-->
+<body style="background-color:palevioletred;">
+    <h1>E agora?</h1>
+</body>
+
+</html>
+
+<!--Sempre recomendavel criar um arquivo a parte para usar o css
+e via de regra os links de css sempre são colocados dentro do body-->

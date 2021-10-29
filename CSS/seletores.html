@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css/tag.css">
+    <style>
+            
+
+
+   /* #aninhado  section {
+        color: #ff2;
+        background-color: #ff10ff;
+    }  Dentro do id aninhado pega diratemnete só o elemento section e faz as sua alterações   
+     
+     [feira ~= escritorio] -> Seletor propriedade que procura todas as propriedades com nome feira
+     e procura se existe uma palava dentro do valor que seja escritório.(só funciona se tiver espaço
+     nos valores)
+
+     [feira *= sa] -> Seletor propriedade que procura todas as propriedades com nome feira e procura
+     dentro dos valores se existe uma sequencia de letras , como no exemplo ali foi sa.
+
+        span:nth-child(1){
+            color: blueviolet;
+            background-color: burlywood;
+        } Seletor filho , dai ele procura em todas as tags e pede pra dar um span que seja filho de alguem
+
+        section > :nth-child(odd) -> dentro de uma section procure todos os filhos impares
+        se colocasse (even) ele selecionaria os filhos pares
+
+        section > :nth-child(odd) , ul , p -> dentro de uma section procure todos os filhos impares
+        se colocasse (even) ele selecionaria os filhos pares e também para as tags ul e p 
+
+        seciont > span:nth-of-type(2) -> Seletor que busca um elemento dentro de uma section e que seja o 
+        segundo elemento do tipo span.(Neste caso seria mudado o span com valor 3,pois ele é o segundo span
+        da section)
+
+     [feira]{
+         color: springgreen;
+         background-color: tomato;
+     }   seletor propriedade , ele procura no programa todas as propriedades com nome feira
+     e faz as alterações necessarias
+    
+     [feira = casa] {
+         color: brown;
+         background-color: aqua; 
+     }   Seletor Propriedade , elea procura no programa todas as propriedades com nome feira e 
+     que tem como valor casa,(assim vale se procurasse o valor escritório empresa).
+
+     p ~ ol {
+         color: seagreen;
+         background-color: sienna;
+     }   Seletor de irmãos geral , se tem alguma ol que tem o elemento pai anterior chamada p
+
+        p + ul {
+            color: royalblue;
+            background-color: saddlebrown;
+        }    Seletor de irmãos adjacente , tem na minha pagina alguma ul que antes dela tem uma tag p,assim a ul
+        será modificada
+
+
+     #aninhado > div {
+        color: #ff2;
+        background-color: purple;
+    } Dentro do id aninhado pega o elemento div e faz as alterações  
+    
+    
+      #aprovados {
+
+        color:#ff1;
+        background-color: palevioletred;
+
+    }seletor de id 
+     
+     
+       .tag {
+        color: #ff0;
+        background-color: orangered;
+       } seletor de classe
+      
+       
+        *{
+            color: #ff0;
+            background-color: #f71;
+        } seletor universal!*/
+
+    </style>
+</head>
+
+<body>
+    <div class='tag'>
+        <div class='tag'>
+            <p class='tag'>1</p>
+            <ul class='tag' feira='casa'>
+                <li>Arroz</li>
+                <li>Feijão</li>
+            </ul>
+            <ul class='tag' feira='escritorio empresa'>
+                <li>Café</li>
+                <li>Água</li>
+            </ul>
+            <ol id='aprovados' class='tag'>
+                <li>Maria</li>
+                <li>Pedro</li>
+                <li>Ana</li>
+            </ol>
+            <div id='aninhado' class='tag'>
+                <div class="tag">
+                    <section class='tag nolabel'>
+                        <span class='tag'>1</span>
+                        <p class='tag'>2</p>
+                        <span class='tag'>3</span>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tag.js"></script>
+</body>
+
+</html>

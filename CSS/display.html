@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        body{
+            font-size: 40px;
+            color: #fff;
+            background-color: tomato;
+        }
+
+        ul{padding: 0;}
+        div{background-color: teal;}
+        span{background-color: navy;}
+        li{background-color: rebeccapurple;}
+
+        div , span,li{
+            width: 50%;
+            width: 200px;
+            height: 80px;
+            padding-top: 30px;
+            text-align: center;
+            display: inline;
+            display: block;
+            display: inline-block;
+            /*display block -> causa que o comportamento do elemento seja impresso na sua própria linha.
+            display inline -> cauas que o comportamento do elemento seja impresso na mesma linha ignorando a altura
+            largura.
+            display inline-block -> causa o compartamento de impresso na sua propria linha e na mesma linha
+            ao mesmo tempo e considerando a largura e altura desta vez.*/
+        }/*% um valor relativo e px um valor absoluto*/
+    </style>
+</head>
+
+<body>
+    <div>Texto 1</div>
+    <span>Texto 2</span>
+    <span>Texto 3</span>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</body>
+
+</html>
