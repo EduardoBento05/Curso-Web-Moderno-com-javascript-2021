@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Selecionar Elementos #01</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="conteudo exercicio">
+    <div id="primeiro">#primeiro</div>
+    <div>Segundo</div>
+    <div class="terceiro ultimo">.terceiro .ultimo</div>
+    <script>              
+            
+        document.getElementById('primeiro').classList.add('destaque')//pega um elemento e adiciona o css destacado
+
+        const divs = document.getElementsByTagName('div') // pega varios elementos
+        Array.from(divs).forEach(e => e.classList.remove('destaque'))//percorre as divs e remove que estão com a classe css 'destaque'
+
+        const divsArray = [...divs]
+        divsArray.forEach(e => e.classList.add('destaque'))//aplicar a classe destaque para todo mundo
+
+        const ultimosElementos = document.getElementsByClassName('ultimo')//remove os elementos que tem a classe ultimo
+        for(let e of ultimosElementos) {
+            e.classList.remove('destaque')
+        }
+
+    </script>
+</body>
+</html>
